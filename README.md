@@ -1,5 +1,7 @@
 # ONE-I
 
+**Narrative Accountability Engine**
+
 ONE-I is a backend-focused news analysis system that consolidates multi-source reporting for a story and exposes structured evidence of agreement, disagreement, and framing differences through a FastAPI application.
 
 ## Overview
@@ -45,7 +47,7 @@ flowchart LR
 1. **Collection**: Load bundled JSON; optionally fetch fresh stories from RSS and GNews; ingest reactions.
 2. **Processing**: Normalize outlets, stories, articles, and comments into SQLAlchemy models.
 3. **Analysis**: Compute confidence, consensus points, disputed facts, framing terms, narrative split, and outlet scores.
-4. **Storage**: Persist normalized entities in SQLite (`clarity.db` by default).
+4. **Storage**: Persist normalized entities in SQLite (`one-i.db` by default).
 5. **Retrieval**: Expose analysis through page routes and API/HTMX endpoints.
 
 Detailed flow is documented in `docs/data-pipeline.md`.
@@ -88,8 +90,8 @@ Detailed flow is documented in `docs/data-pipeline.md`.
 
 1. **Clone**
    ```bash
-   git clone <your-repo-url>
-   cd "one i"
+   git clone https://github.com/Garv-Arora2/ONE-I.git
+   cd ONE-I
    ```
 2. **Create virtual environment**
    ```bash

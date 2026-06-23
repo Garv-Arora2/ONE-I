@@ -43,7 +43,7 @@ Main stages:
 
 ## 4) Storage
 
-Default storage is a local SQLite file (`clarity.db`).
+Default storage is a local SQLite file (`one-i.db`).
 
 - Engine and session setup: `app/db.py`
 - Table creation on startup: `init_db()`

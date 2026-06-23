@@ -25,7 +25,7 @@
 
 - SQLAlchemy models in `app/models.py`
 - Session/engine setup in `app/db.py`
-- Default database: SQLite (`clarity.db`)
+- Default database: SQLite (`one-i.db`)
 
 ### Ingestion and Refresh
 

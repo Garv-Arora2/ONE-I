@@ -1,4 +1,4 @@
-"""Rule-based analysis engine for One-I.
+"""Rule-based analysis engine for ONE-I.
 
 All analysis is deterministic and runs offline. The Crux engine uses
 classical NLP (TF-IDF + cosine similarity), not an LLM.

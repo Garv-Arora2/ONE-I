@@ -99,7 +99,7 @@ def _fetch_feed(client: httpx.Client, outlet: str, url: str) -> list[dict]:
 def fetch_rss_by_topic(max_per_story: int = 8) -> dict[str, list[dict]]:
     data = json.loads(FEEDS_FILE.read_text(encoding="utf-8"))
     all_entries: list[dict] = []
-    headers = {"User-Agent": "one-i-news-intel/0.1 (RSS refresh)"}
+    headers = {"User-Agent": "ONE-I/0.1 (RSS refresh)"}
     with httpx.Client(headers=headers) as client:
         for feed in data.get("feeds", []):
             rows = _fetch_feed(client, feed.get("outlet", "Unknown"), feed["url"])

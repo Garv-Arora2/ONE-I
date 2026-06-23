@@ -1,4 +1,4 @@
-// One-I — minimal client helpers
+// ONE-I — minimal client helpers
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.narrative-bar-fill').forEach((el) => {
     const w = el.style.width;

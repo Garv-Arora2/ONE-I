@@ -45,6 +45,7 @@ templates.env.filters["fmt_date"] = fmt_date
 templates.env.filters["fmt_num"] = fmt_num
 templates.env.globals.update(
     app_name=settings.app_name,
+    subtitle=settings.subtitle,
     tagline=settings.tagline,
     confidence_color=confidence_color,
     confidence_ring=confidence_ring,

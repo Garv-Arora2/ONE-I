@@ -1,4 +1,4 @@
-"""One-I - news intelligence dashboard. FastAPI application entrypoint."""
+"""ONE-I — Narrative Accountability Engine. FastAPI application entrypoint."""
 from __future__ import annotations
 
 import logging
