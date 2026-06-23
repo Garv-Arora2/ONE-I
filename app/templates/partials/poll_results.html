@@ -1,0 +1,18 @@
+{# expects: result (dict) #}
+{% if result.total > 0 %}
+<div class="space-y-2">
+  {% for o in result.options %}
+  <div>
+    <div class="flex justify-between text-xs mb-1" style="color:var(--text-secondary)">
+      <span>{{ o.label }}{% if o.selected %} ✓{% endif %}</span>
+      <span>{{ o.pct }}%</span>
+    </div>
+    <div class="h-1 rounded-full overflow-hidden" style="background:var(--border)">
+      <div class="h-full rounded-full transition-all duration-500" style="width:{{ o.pct }}%;background:var(--consensus)"></div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="text-xs" style="color:var(--text-secondary)">No votes yet</p>
+{% endif %}

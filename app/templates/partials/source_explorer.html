@@ -1,0 +1,16 @@
+{# expects: point (dict) #}
+<div class="rounded-lg border border-slate-200 bg-white p-3">
+  <div class="mb-2 text-[11px] font-semibold uppercase tracking-widest text-slate-400">
+    Sources supporting this Crux point
+  </div>
+  <ul class="space-y-2">
+    {% for s in point.supporting %}
+    <li class="flex items-start gap-2 text-sm">
+      <div class="min-w-0 flex-1">
+        <a href="/outlet/{{ s.outlet }}" class="font-semibold text-slate-800 hover:text-blue-700">{{ s.outlet }}</a>
+        <p class="text-slate-500">&ldquo;{{ s.sentence }}&rdquo;</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

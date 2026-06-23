@@ -1,0 +1,14 @@
+{
+  "_note": "Public RSS feeds used by scripts/refresh_rss.py. No API key required.",
+  "feeds": [
+    {"outlet": "BBC", "url": "https://feeds.bbci.co.uk/news/world/rss.xml"},
+    {"outlet": "Reuters", "url": "https://feeds.reuters.com/reuters/worldNews"},
+    {"outlet": "The Guardian", "url": "https://www.theguardian.com/world/rss"},
+    {"outlet": "CNN", "url": "http://rss.cnn.com/rss/cnn_world.rss"},
+    {"outlet": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml"},
+    {"outlet": "Associated Press", "url": "https://rsshub.app/apnews/topics/apf-topnews"},
+    {"outlet": "Fox News", "url": "https://moxie.foxnews.com/google-publisher/world.xml"},
+    {"outlet": "Bloomberg", "url": "https://feeds.bloomberg.com/politics/news.rss"},
+    {"outlet": "NPR", "url": "https://feeds.npr.org/1004/rss.xml"}
+  ]
+}

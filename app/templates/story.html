@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content %}
+{% set slug = story.slug %}
+
+<nav class="mb-4 text-xs" style="color:var(--text-secondary)">
+  <a href="/" class="hover:underline">Home</a> <span class="mx-1">/</span> {{ story.title }}
+</nav>
+
+{# 1. Header #}
+<header class="mb-12 grid grid-cols-1 gap-6 lg:grid-cols-3 pb-10 border-b" style="border-color:var(--border)">
+  <div class="lg:col-span-2">
+    {% if story.image_url %}
+    <div class="mb-4 h-48 overflow-hidden rounded-lg">
+      <img src="{{ story.image_url }}" alt="{{ story.title }}" class="h-full w-full object-cover" onerror="this.style.display='none'">
+    </div>
+    {% endif %}
+    <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-2" style="color:var(--text)">{{ story.title }}</h1>
+    <p class="text-base mb-3" style="color:var(--text-secondary)">{{ story.summary }}</p>
+    <p class="text-xs" style="color:var(--text-secondary)">{{ source_count }} sources · {{ reading_mins }} min read</p>
+  </div>
+  <div id="confidence-meter-panel">
+    {% include "partials/confidence_meter.html" %}
+  </div>
+</header>
+
+{# Signature: agree / disagree columns #}
+{% include "partials/agree_disagree.html" %}
+
+{# What happened bullets #}
+{% include "partials/what_happened.html" %}
+
+{# 2. Consensus #}
+<section class="mb-12">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-4" style="color:var(--text-secondary)">What most outlets agree happened</h2>
+  {% include "partials/consensus_list.html" %}
+</section>
+
+{# 3. Disputed facts #}
+<section class="mb-12">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-2" style="color:var(--conflict)">Fact under dispute</h2>
+  {% include "partials/disputed_facts.html" %}
+</section>
+
+{# 4. Framing divergence #}
+<section class="mb-12">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-4" style="color:var(--text-secondary)">Framing divergence</h2>
+  {% include "partials/framing_terms.html" %}
+</section>
+
+{# 5. Timeline #}
+{% include "partials/timeline.html" %}
+
+{# 6. Missing coverage #}
+<section class="mb-12">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-2" style="color:var(--text-secondary)">Missing coverage</h2>
+  <p class="text-xs mb-3" style="color:var(--text-secondary)">Major outlets not detected in this sample — absence here is not proof of deliberate omission.</p>
+  {% if missing.missing %}
+  <ul class="flex flex-wrap gap-2">
+    {% for m in missing.missing %}
+    <li class="px-3 py-1.5 text-sm rounded border" style="border-color:var(--border);color:var(--text)">{{ m.outlet }}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="text-sm" style="color:var(--consensus)">All major outlets are covering this story in our sample.</p>
+  {% endif %}
+</section>
+
+{# 7. Source explorer full #}
+{% include "partials/source_explorer_full.html" %}
+
+{# 8. Public reaction #}
+<section class="mb-12">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-2" style="color:var(--text-secondary)">Public reaction — top statements</h2>
+  <p class="text-xs mb-4" style="color:var(--text-secondary)">Ranked by upvotes. Sentiment and theme clustering coming soon.</p>
+  {% include "partials/reactions.html" %}
+</section>
+
+{# 9. Community validation polls #}
+<section class="mb-8 pt-8 border-t" style="border-color:var(--border)">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-4" style="color:var(--text-secondary)">Community validation</h2>
+  {% with poll_community=poll_community %}{% include "partials/poll.html" %}{% endwith %}
+</section>
+
+{% endblock %}

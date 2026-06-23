@@ -1,0 +1,42 @@
+{# expects: crux (dict), slug (str) #}
+<div class="space-y-3">
+  {% if crux.majority %}
+    {% for p in crux.majority %}
+    <div class="rounded-lg border p-4" style="border-color:color-mix(in srgb, var(--consensus) 35%, var(--border));background:color-mix(in srgb, var(--consensus) 6%, var(--bg-elevated))">
+      <div class="flex items-start gap-3">
+        <span class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white" style="background:var(--consensus)">✓</span>
+        <div class="min-w-0 flex-1">
+          <p class="text-sm font-medium" style="color:var(--text)">{{ p.claim }}</p>
+          <div class="mt-2 flex items-center gap-3">
+            <span class="text-xs font-semibold" style="color:var(--consensus)">{{ p.support_count }} / {{ p.total_outlets }} sources</span>
+            <button type="button" class="text-xs font-semibold hover:underline" style="color:var(--accent)"
+                    hx-get="/api/story/{{ slug }}/source/{{ p.id }}"
+                    hx-target="#src-{{ p.id }}" hx-swap="innerHTML">Show sources</button>
+          </div>
+          <div id="src-{{ p.id }}" class="mt-2"></div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p class="text-sm" style="color:var(--text-secondary)">Not enough overlapping coverage to establish consensus yet.</p>
+  {% endif %}
+
+  {% if crux.split %}
+  <div class="pt-2">
+    <p class="mb-2 text-[11px] font-semibold uppercase tracking-widest" style="color:var(--dispute)">Partially reported</p>
+    {% for p in crux.split %}
+    <div class="mb-2 rounded-lg border p-4" style="border-color:color-mix(in srgb, var(--dispute) 35%, var(--border));background:var(--bg-elevated)">
+      <p class="text-sm" style="color:var(--text)">{{ p.claim }}</p>
+      <div class="mt-2 flex items-center gap-3">
+        <span class="text-xs font-semibold" style="color:var(--dispute)">{{ p.support_count }} / {{ p.total_outlets }} sources</span>
+        <button type="button" class="text-xs font-semibold hover:underline" style="color:var(--accent)"
+                hx-get="/api/story/{{ slug }}/source/{{ p.id }}"
+                hx-target="#src-split-{{ p.id }}" hx-swap="innerHTML">Show sources</button>
+      </div>
+      <div id="src-split-{{ p.id }}" class="mt-2"></div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

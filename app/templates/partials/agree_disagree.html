@@ -1,0 +1,39 @@
+{# Signature: two columns — expects: landscape #}
+<section class="mb-16 grid md:grid-cols-2 gap-6">
+  <div class="rounded-lg border p-6" style="border-color:var(--border);background:var(--bg-elevated)">
+    <h2 class="text-xs font-bold uppercase tracking-widest mb-4" style="color:var(--consensus)">What everyone agrees on</h2>
+    {% if landscape.consensus %}
+    <ul class="space-y-3">
+      {% for item in landscape.consensus %}
+      <li class="flex items-start gap-3 text-sm">
+        <span class="text-consensus font-bold mt-0.5">✓</span>
+        <span style="color:var(--text)">{{ item.claim }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="text-sm" style="color:var(--text-secondary)">No clear consensus yet across sources.</p>
+    {% endif %}
+  </div>
+  <div class="rounded-lg border p-6" style="border-color:var(--border);background:var(--bg-elevated)">
+    <h2 class="text-xs font-bold uppercase tracking-widest mb-4" style="color:var(--dispute)">What nobody agrees on</h2>
+    {% if landscape.contested or landscape.unknown %}
+    <ul class="space-y-3">
+      {% for item in landscape.contested %}
+      <li class="flex items-start gap-3 text-sm">
+        <span style="color:var(--dispute)" class="font-bold mt-0.5">!</span>
+        <span style="color:var(--text)">{{ item.claim }}</span>
+      </li>
+      {% endfor %}
+      {% for item in landscape.unknown %}
+      <li class="flex items-start gap-3 text-sm">
+        <span style="color:var(--text-secondary)" class="font-bold mt-0.5">?</span>
+        <span style="color:var(--text)">{{ item.claim }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="text-sm" style="color:var(--text-secondary)">No major disputes detected.</p>
+    {% endif %}
+  </div>
+</section>

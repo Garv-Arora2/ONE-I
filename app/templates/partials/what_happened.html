@@ -1,0 +1,18 @@
+{# expects: what_happened (list) #}
+<section class="mb-16 text-center max-w-2xl mx-auto">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-8" style="color:var(--text-secondary)">What happened</h2>
+  <ul class="space-y-4 text-left inline-block">
+    {% for b in what_happened %}
+    <li class="flex items-start gap-4 text-base">
+      {% if b.status == 'agreed' %}
+      <span class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--consensus)">✓</span>
+      {% elif b.status == 'disputed' %}
+      <span class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--dispute)">!</span>
+      {% else %}
+      <span class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold border" style="border-color:var(--border);color:var(--text-secondary)">?</span>
+      {% endif %}
+      <span style="color:var(--text)">{{ b.text }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

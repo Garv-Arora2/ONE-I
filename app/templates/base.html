@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="h-full" x-data="{ theme: localStorage.getItem('one-i-theme') || 'light', searchOpen: false }"
+      x-init="$watch('theme', v => { document.documentElement.setAttribute('data-theme', v === 'dark' ? 'dark' : ''); localStorage.setItem('one-i-theme', v) }); document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'dark' : '')"
+      @keydown.window.prevent.ctrl.k="searchOpen = true"
+      @keydown.window.escape="searchOpen = false">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} &middot; {{ app_name }}</title>
+  <meta name="description" content="{{ tagline }}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            paper: '#FAFAF8',
+            ink: '#111111',
+            muted: '#666666',
+            line: '#E5E5E5',
+            consensus: '#1E9E62',
+            dispute: '#F4A621',
+            conflict: '#D64545',
+            accent: '#2563EB',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="/static/app.css">
+  <script defer src="/static/app.js"></script>
+</head>
+<body class="h-full font-sans antialiased" style="background:var(--bg);color:var(--text)">
+
+  <header class="nav-glass sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-full flex items-center justify-between gap-4">
+      <a href="/" class="text-lg font-extrabold tracking-tight shrink-0" style="color:var(--text)">ONE I</a>
+
+      <nav class="hidden md:flex items-center gap-1 text-sm font-medium" style="color:var(--text-secondary)">
+        <a href="/" class="px-3 py-2 rounded-md hover:opacity-80 transition" style="color:var(--text)">World</a>
+        <span class="px-3 py-2 opacity-40 cursor-default">Politics</span>
+        <span class="px-3 py-2 opacity-40 cursor-default">Business</span>
+        <span class="px-3 py-2 opacity-40 cursor-default">Tech</span>
+        <span class="px-3 py-2 opacity-40 cursor-default">Conflict</span>
+        <span class="px-3 py-2 opacity-40 cursor-default">Climate</span>
+      </nav>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <button type="button" @click="searchOpen = true"
+                class="hidden sm:flex items-center gap-2 px-3 py-2 rounded-lg text-sm border transition hover:opacity-80"
+                style="border-color:var(--border);color:var(--text-secondary)">
+          <span>Search</span>
+          <kbd class="text-[10px] px-1.5 py-0.5 rounded border" style="border-color:var(--border)">⌘K</kbd>
+        </button>
+        <button type="button" @click="theme = theme === 'dark' ? 'light' : 'dark'"
+                class="p-2 rounded-lg border transition hover:opacity-80" style="border-color:var(--border)"
+                aria-label="Toggle dark mode">
+          <span x-show="theme !== 'dark'">◐</span>
+          <span x-show="theme === 'dark'">◑</span>
+        </button>
+        <a href="/about" class="hidden sm:block px-3 py-2 text-sm font-medium" style="color:var(--text-secondary)">About</a>
+      </div>
+    </div>
+  </header>
+
+  {# Search overlay #}
+  <div x-show="searchOpen" x-transition.opacity class="fixed inset-0 z-[60] search-overlay flex items-start justify-center pt-24 px-4"
+       @click.self="searchOpen = false" x-cloak>
+    <div class="w-full max-w-xl rounded-xl border shadow-2xl overflow-hidden" style="background:var(--bg-elevated);border-color:var(--border)">
+      <form action="/" method="get" class="flex items-center gap-3 px-4 border-b" style="border-color:var(--border);height:64px">
+        <span style="color:var(--text-secondary)">⌕</span>
+        <input type="search" name="q" autofocus placeholder="Search a story..."
+               class="flex-1 bg-transparent text-base outline-none" style="color:var(--text)">
+      </form>
+      <p class="px-4 py-3 text-xs" style="color:var(--text-secondary)">Browse stories on the home feed · Ctrl+K anytime</p>
+    </div>
+  </div>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 page-enter">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="border-t mt-16 py-8" style="border-color:var(--border)">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between gap-4 text-xs" style="color:var(--text-secondary)">
+      <div>
+        <span class="font-bold" style="color:var(--text)">ONE I</span>
+        <span class="mx-2">·</span>
+        <span>{{ tagline }}</span>
+      </div>
+      <span>Coverage confidence, not a truth score</span>
+    </div>
+  </footer>
+
+  {# Mobile bottom nav #}
+  <nav class="md:hidden fixed bottom-0 inset-x-0 z-50 border-t flex justify-around py-2" style="background:var(--bg-elevated);border-color:var(--border)">
+    <a href="/" class="flex flex-col items-center text-[10px] font-medium px-3 py-1" style="color:var(--text)">Home</a>
+    <button type="button" @click="searchOpen = true" class="flex flex-col items-center text-[10px] font-medium px-3 py-1" style="color:var(--text-secondary)">Search</button>
+    <a href="/about" class="flex flex-col items-center text-[10px] font-medium px-3 py-1" style="color:var(--text-secondary)">About</a>
+  </nav>
+
+  <style>[x-cloak]{display:none!important}</style>
+</body>
+</html>

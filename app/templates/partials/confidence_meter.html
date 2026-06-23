@@ -1,0 +1,29 @@
+{# expects: confidence (dict) #}
+{% set score = confidence.score %}
+<div class="rounded-lg border p-5" style="border-color:var(--border);background:var(--bg-elevated)" x-data="{ open: false }">
+  <div class="flex items-center gap-5">
+    {% with score=score, size='sm' %}{% include "partials/consensus_ring.html" %}{% endwith %}
+    <div class="min-w-0">
+      <p class="text-[11px] font-semibold uppercase tracking-widest" style="color:var(--text-secondary)">Coverage Confidence</p>
+      <p class="text-xl font-bold {{ confidence_color(score) }}">{{ confidence.label }}</p>
+      <p class="text-xs mt-1" style="color:var(--text-secondary)">How trustworthy the coverage is — not a truth score.</p>
+      <button type="button" @click="open = !open" class="mt-2 text-xs font-semibold hover:underline" style="color:var(--accent)">
+        <span x-show="!open">How is this calculated?</span>
+        <span x-show="open">Hide breakdown</span>
+      </button>
+    </div>
+  </div>
+  <div x-show="open" x-transition class="mt-4 space-y-2 border-t pt-3" style="border-color:var(--border)">
+    {% for b in confidence.breakdown %}
+    <div>
+      <div class="flex justify-between text-xs mb-1">
+        <span style="color:var(--text)">{{ b.key }} <span style="color:var(--text-secondary)">· {{ b.weight }}%</span></span>
+        <span style="color:var(--text-secondary)">{{ b.note }}</span>
+      </div>
+      <div class="h-1.5 rounded-full overflow-hidden" style="background:var(--border)">
+        <div class="h-full rounded-full" style="width:{{ (b.value * 100)|round }}%;background:var(--accent)"></div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{# expects: disputed (dict) #}
+{% if disputed.disputed %}
+<div class="space-y-6">
+  {% for fact in disputed.disputed %}
+  <div>
+    <p class="mb-2 text-xs font-semibold uppercase tracking-wider" style="color:var(--text-secondary)">{{ fact.fact }}</p>
+    <ul class="space-y-2">
+      {% for row in fact.rows %}
+      <li class="flex items-start gap-2 text-sm" style="color:var(--text)">
+        <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full" style="background:var(--conflict)"></span>
+        <span>{{ row.line }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="text-sm" style="color:var(--text-secondary)">No conflicting numeric claims detected across these sources.</p>
+{% endif %}

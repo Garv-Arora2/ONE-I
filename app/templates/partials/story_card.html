@@ -1,0 +1,23 @@
+{# expects: card (dict) #}
+<a href="/story/{{ card.slug }}" class="feed-row group block rounded-xl border overflow-hidden transition"
+   style="border-color:var(--border);background:var(--bg-elevated)">
+  <div class="relative h-44 overflow-hidden" style="background:var(--border)">
+    {% if card.image_url %}
+    <img src="{{ card.image_url }}" alt="{{ card.title }}" loading="lazy" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+         onerror="this.style.display='none'">
+    {% endif %}
+    <div class="absolute top-3 right-3 flex items-center gap-1.5 rounded-lg px-2.5 py-1 shadow-sm" style="background:var(--bg-elevated)">
+      <span class="text-lg font-bold tabular-nums {{ confidence_color(card.confidence.score) }}">{{ card.confidence.score }}</span>
+      <span class="text-[10px] font-semibold uppercase" style="color:var(--text-secondary)">{{ card.confidence.label }}</span>
+    </div>
+  </div>
+  <div class="p-4">
+    <h3 class="text-xl font-bold leading-snug mb-2 group-hover:opacity-80" style="color:var(--text)">{{ card.title }}</h3>
+    <p class="text-sm line-clamp-2 mb-3" style="color:var(--text-secondary)">{{ card.summary }}</p>
+    <div class="flex flex-wrap gap-2 text-[11px] mb-3" style="color:var(--text-secondary)">
+      <span>{{ card.sources }} sources</span>
+      {% if card.disputed %}<span style="color:var(--dispute)">{{ card.disputed }} disputed</span>{% endif %}
+    </div>
+    {% with bias=card.bias, compact=True %}{% include "partials/bias_bar.html" %}{% endwith %}
+  </div>
+</a>

@@ -1,0 +1,20 @@
+{# expects: bias (dict), optional compact (bool) #}
+<div>
+  <div class="flex h-2.5 w-full overflow-hidden rounded-full bg-slate-200">
+    {% for seg in bias.segments %}
+      {% if seg.count > 0 %}
+        <div class="{{ lean_seg[seg.bucket] }}" style="width: {{ seg.pct }}%"
+             title="{{ seg.label }}: {{ seg.count }}"></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% if not compact %}
+  <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-slate-500">
+    {% for seg in bias.segments %}
+      <span class="inline-flex items-center gap-1 {% if seg.count == 0 %}opacity-40{% endif %}">
+        <span class="h-2 w-2 rounded-full {{ lean_seg[seg.bucket] }}"></span>{{ seg.label }} {{ seg.count }}
+      </span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

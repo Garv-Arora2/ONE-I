@@ -1,0 +1,73 @@
+{
+  "slug": "fed-holds-rates-2026",
+  "title": "Fed Holds Rates at 5.25%",
+  "topic_query": "Federal Reserve interest rate decision June 2026",
+  "summary": "The Federal Reserve kept its benchmark interest rate unchanged at 5.25% at its June meeting, citing progress on inflation and a steady labor market. Coverage across financial and general outlets largely agreed on the decision, the stated rationale, and expectations for a possible cut later in the year.",
+  "image_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=60",
+  "articles": [
+    {
+      "outlet": "Reuters",
+      "url": "https://www.reuters.com/markets/us/fed-holds-rates-june-2026",
+      "headline": "Fed holds rates at 5.25%, signals patience on cuts",
+      "description": "The Federal Reserve left its target interest rate unchanged at 5.25% on Wednesday, as widely expected by markets. Chair Jerome Powell said policymakers needed more confidence that inflation was moving sustainably toward 2% before reducing borrowing costs. The dot plot showed most officials projecting one quarter-point cut before year-end.",
+      "published_at": "2026-06-18T18:00:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-18/fed-holds-525",
+      "headline": "Fed Keeps Rates at 5.25% as Inflation Cools Gradually",
+      "description": "The Federal Open Market Committee voted unanimously to maintain the federal funds rate at 5.25%, the level set in prior meetings. Bloomberg Economics noted that core PCE inflation had eased to 2.6% over the past year. Treasury yields fell slightly after the statement reiterated that the committee does not expect to cut until it sees further progress.",
+      "published_at": "2026-06-18T18:05:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "The Wall Street Journal",
+      "url": "https://www.wsj.com/economy/central-banking/fed-holds-rates-june-2026",
+      "headline": "Federal Reserve Holds Key Rate at 5.25%, Waits for Clearer Inflation Signal",
+      "description": "The Fed kept its benchmark rate at 5.25% for a fourth consecutive meeting, matching forecasts from economists surveyed by the Journal. Officials said the labor market remained solid, with unemployment holding near 4.1%. Powell told reporters the committee was in no rush to adjust policy while price pressures continued to moderate.",
+      "published_at": "2026-06-18T18:15:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Financial Times",
+      "url": "https://www.ft.com/content/fed-holds-rates-525-june-2026",
+      "headline": "US Fed leaves rates unchanged at 5.25% in widely anticipated move",
+      "description": "The Federal Reserve maintained its policy rate at 5.25%, a decision markets had priced in with near certainty. The FT reported that officials acknowledged improved inflation data but wanted additional months of evidence before easing. European and Asian equities rose modestly after the statement avoided hawkish surprises.",
+      "published_at": "2026-06-18T18:20:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Associated Press",
+      "url": "https://apnews.com/article/federal-reserve-rate-decision-june-2026",
+      "headline": "Fed keeps interest rates at 5.25%, citing need for more inflation progress",
+      "description": "The Federal Reserve held its key interest rate steady at 5.25%, extending a pause that began earlier this year. In a statement, the central bank said recent data showed inflation easing but still running above its 2% target. AP noted that mortgage rates and auto loan costs are likely to remain elevated in the near term.",
+      "published_at": "2026-06-18T18:30:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "BBC",
+      "url": "https://www.bbc.com/news/business-fed-rates-june-2026",
+      "headline": "US Federal Reserve holds rates at 5.25% as inflation slows",
+      "description": "The US central bank left interest rates unchanged at 5.25%, in line with economist expectations. The BBC reported that policymakers cited a cooling jobs market alongside gradually falling price growth. Global investors watched for hints on timing of the Fed's first rate cut since the tightening cycle began.",
+      "published_at": "2026-06-18T18:45:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "CNBC",
+      "url": "https://www.cnbc.com/2026/06/18/fed-decision-june-2026.html",
+      "headline": "Fed holds rates steady at 5.25%, markets bet on September cut",
+      "description": "The Federal Reserve kept its overnight rate at 5.25% at the conclusion of its two-day meeting. CNBC's Fed survey showed 78% of respondents expect a cut at the September meeting if inflation data hold. Major stock indexes closed higher, with the S&P 500 gaining 0.6% after Powell's press conference.",
+      "published_at": "2026-06-18T19:00:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Fox News",
+      "url": "https://www.foxnews.com/politics/fed-holds-rates-525-june-2026",
+      "headline": "Federal Reserve keeps rates at 5.25%, Powell cites lingering inflation concerns",
+      "description": "The Fed voted to leave its benchmark rate at 5.25%, continuing a pause that has kept borrowing costs high for households and businesses. Fox Business reported that Powell emphasized the central bank's independence amid political pressure from both parties. Republicans and Democrats alike noted the decision would keep mortgage rates elevated through the summer.",
+      "published_at": "2026-06-18T19:20:00Z",
+      "image_url": null
+    }
+  ]
+}

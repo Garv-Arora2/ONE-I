@@ -1,0 +1,65 @@
+{
+  "slug": "cop-climate-summit-2026",
+  "title": "COP Climate Summit Deal",
+  "topic_query": "COP climate summit agreement 2026",
+  "summary": "Negotiators at the latest UN climate summit reached a deal on fossil fuel transition financing and updated emissions targets, but outlets divided sharply on whether the agreement represented a genuine breakthrough or fell short of what science demands.",
+  "image_url": "https://images.unsplash.com/photo-1569163139394-de4798aa62b0?w=1200&q=60",
+  "articles": [
+    {
+      "outlet": "Reuters",
+      "url": "https://www.reuters.com/business/environment/cop-climate-summit-deal-2026",
+      "headline": "COP summit clinches deal on transition fund, splits on ambition",
+      "description": "Delegates agreed to establish a $100 billion transition fund to help developing nations shift from coal and oil. Reuters noted that the final text omitted explicit language on phasing out fossil fuels that some nations had pushed for. UN officials called the outcome a step forward while acknowledging sharp divisions among participants.",
+      "published_at": "2026-06-15T22:00:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "BBC",
+      "url": "https://www.bbc.com/news/science-environment-cop-deal-2026",
+      "headline": "COP deal hailed as breakthrough on climate finance",
+      "description": "The BBC reported that negotiators hailed the agreement as a breakthrough after all-night talks in Geneva. The deal commits wealthy nations to increased funding for adaptation and loss-and-damage programs. Climate scientists said the emissions pledges attached to the fund still leave the world off track for 1.5°C warming.",
+      "published_at": "2026-06-15T22:30:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/climate/cop-summit-deal-2026",
+      "headline": "Climate summit deal falls short for nations on front line of crisis",
+      "description": "Al Jazeera spoke with delegates from Pacific island states who said the agreement falls short of addressing the scale of damage they already face. The outlet reported that financing commitments remain voluntary and lack enforcement mechanisms. Activists outside the venue called the deal inadequate compared with the urgency described by the IPCC.",
+      "published_at": "2026-06-15T23:00:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "The Guardian",
+      "url": "https://www.theguardian.com/environment/2026/jun/15/cop-climate-deal-inadequate",
+      "headline": "Cop deal branded inadequate as activists slam weak fossil fuel language",
+      "description": "The Guardian emphasized criticism from environmental groups who said the summit produced an inadequate response to the climate emergency. The final communique references a transition away from fossil fuels but sets no binding timeline. Several European ministers defended the package as the best achievable compromise given opposition from major oil producers.",
+      "published_at": "2026-06-15T23:45:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Associated Press",
+      "url": "https://apnews.com/article/cop-climate-summit-agreement-2026",
+      "headline": "Nations reach climate deal with new fund, but gaps remain on emissions cuts",
+      "description": "The Associated Press reported that nearly 190 countries approved a deal creating a transition fund and encouraging updated national climate plans by 2027. AP noted that the agreement was described as a breakthrough by the summit president and as insufficient by island nation representatives. Analysts said implementation will determine whether the pact meaningfully reduces global emissions.",
+      "published_at": "2026-06-16T00:15:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "France 24",
+      "url": "https://www.france24.com/en/environment-cop-summit-breakthrough-2026",
+      "headline": "EU leaders welcome COP breakthrough on climate finance package",
+      "description": "France 24 reported that European Union leaders welcomed what they called a breakthrough agreement on multilateral climate financing. French officials highlighted provisions for methane reduction and renewable energy targets in the final text. The broadcast noted that critics argue the deal's voluntary elements make it vulnerable to shifting political winds in donor countries.",
+      "published_at": "2026-06-16T01:00:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "url": "https://www.dw.com/en/cop-climate-deal-falls-short/a-2026",
+      "headline": "COP agreement falls short of scientists' warnings, DW analysis finds",
+      "description": "Deutsche Welle's analysis concluded that the summit deal falls short of the emissions trajectory scientists say is needed to limit catastrophic warming. German NGOs said the financing pledge, while larger than prior commitments, remains insufficient for the Global South. DW also noted that some delegates privately described the outcome as a pragmatic breakthrough given geopolitical constraints.",
+      "published_at": "2026-06-16T02:30:00Z",
+      "image_url": null
+    }
+  ]
+}

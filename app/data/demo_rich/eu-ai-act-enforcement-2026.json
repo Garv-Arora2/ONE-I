@@ -1,0 +1,65 @@
+{
+  "slug": "eu-ai-act-enforcement-2026",
+  "title": "EU AI Act Enforcement Begins",
+  "topic_query": "EU AI Act enforcement 2026",
+  "summary": "The European Union began enforcing core provisions of its AI Act, with regulators and industry bracing for compliance deadlines on high-risk systems. Coverage split between outlets hailing landmark protection for citizens and those warning of a burdensome crackdown that could stifle innovation.",
+  "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=60",
+  "articles": [
+    {
+      "outlet": "Reuters",
+      "url": "https://www.reuters.com/technology/eu-ai-act-enforcement-2026",
+      "headline": "EU starts enforcing AI Act as companies face new compliance deadlines",
+      "description": "European regulators began applying the first binding rules under the AI Act on Monday, focusing on banned practices and transparency requirements for general-purpose models. Companies were given staggered deadlines through 2027 depending on risk classification. Brussels said enforcement would be phased to allow smaller firms time to adapt.",
+      "published_at": "2026-06-02T08:00:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "BBC",
+      "url": "https://www.bbc.com/news/technology-eu-ai-act-enforcement",
+      "headline": "Landmark EU AI rules take effect, promising stronger protection for citizens",
+      "description": "The BBC reported that the EU's AI Act entered its enforcement phase, described by officials as landmark protection for fundamental rights. The rules prohibit social scoring and certain biometric surveillance in public spaces. Consumer groups welcomed the move while tech firms said they were working to meet documentation and audit requirements.",
+      "published_at": "2026-06-02T09:15:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "The Guardian",
+      "url": "https://www.theguardian.com/technology/2026/jun/02/eu-ai-act-enforcement",
+      "headline": "EU AI Act enforcement begins in 'landmark moment' for digital rights",
+      "description": "The Guardian framed the start of enforcement as a landmark moment for holding technology companies accountable. Advocates said the law offers the strongest safeguards yet against discriminatory algorithms in hiring and lending. Critics within industry argued that overlapping national rules could create confusion during the transition period.",
+      "published_at": "2026-06-02T10:30:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Politico EU",
+      "url": "https://www.politico.eu/article/eu-ai-act-enforcement-brussels-compliance",
+      "headline": "Brussels turns AI Act from paper to practice as watchdogs gain new powers",
+      "description": "Politico EU reported that national regulators and the new AI Office gained authority to request documentation and impose fines for non-compliance. Officials in Paris and Berlin said they were hiring additional inspectors to handle expected caseloads. The Commission insisted the framework balances innovation with the bloc's values-based approach to technology.",
+      "published_at": "2026-06-02T11:00:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Financial Times",
+      "url": "https://www.ft.com/content/eu-ai-act-enforcement-burden-2026",
+      "headline": "Businesses warn of compliance burden as EU AI Act enforcement starts",
+      "description": "The Financial Times highlighted concerns from startups and multinationals about the cost of meeting new audit and transparency obligations. Several executives said the rules amount to a regulatory crackdown that could push AI development outside Europe. Brussels responded that phased deadlines and sandboxes were designed to reduce the burden on smaller companies.",
+      "published_at": "2026-06-02T12:20:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Axios",
+      "url": "https://www.axios.com/2026/06/02/eu-ai-act-enforcement-tech-industry",
+      "headline": "EU AI Act goes live: what enforcement means for US tech giants",
+      "description": "Axios explained that enforcement now covers banned AI uses and initial obligations for providers of general-purpose models operating in the EU market. US companies with European customers must appoint EU representatives and maintain technical documentation. Analysts said the practical impact will unfold over months as the first compliance reviews begin.",
+      "published_at": "2026-06-02T13:45:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "The Verge",
+      "url": "https://www.theverge.com/2026/6/2/eu-ai-act-enforcement-crackdown",
+      "headline": "The EU's AI crackdown is here, and Silicon Valley isn't ready",
+      "description": "The Verge argued that enforcement marks the beginning of a crackdown on opaque AI systems that have operated with minimal oversight. The piece cited open-source developers who fear documentation rules could stifle community projects. Supporters countered that landmark protection for users outweighs short-term disruption for the industry.",
+      "published_at": "2026-06-02T15:10:00Z",
+      "image_url": null
+    }
+  ]
+}

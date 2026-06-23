@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="mb-8 pb-6 border-b" style="border-color:var(--border)">
+  <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color:var(--text-secondary)">Outlet report card</p>
+  <h1 class="text-3xl font-bold mb-2" style="color:var(--text)">{{ card.name }}</h1>
+  <div class="flex flex-wrap items-center gap-3 text-sm">
+    <span class="px-2.5 py-1 rounded border capitalize" style="border-color:var(--border);color:var(--text)">{{ card.lean|replace('-', ' ') }}</span>
+    <span style="color:var(--text-secondary)">Reliability: <strong style="color:var(--text)">{{ (card.reliability * 100)|round }}%</strong></span>
+    {% if not card.known %}<span class="text-xs px-2 py-0.5 rounded" style="background:var(--border)">Unrated source</span>{% endif %}
+  </div>
+</section>
+
+<div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+  <div class="space-y-6 lg:col-span-2">
+    <section class="rounded-lg border p-5" style="border-color:var(--border);background:var(--bg-elevated)">
+      <h2 class="text-sm font-bold mb-4" style="color:var(--text)">Track record (cached sample)</h2>
+      <div class="space-y-4">
+        {% for label, val, color in [
+          ('Reliability', card.reliability, 'var(--accent)'),
+          ('Coverage breadth', card.coverage_breadth, 'var(--consensus)'),
+          ('Emotional language', card.emotional_language, 'var(--conflict)'),
+        ] %}
+        <div>
+          <div class="flex justify-between text-xs mb-1"><span style="color:var(--text)">{{ label }}</span><span style="color:var(--text-secondary)">{{ (val * 100)|round }}%</span></div>
+          <div class="h-1.5 rounded-full overflow-hidden" style="background:var(--border)"><div class="h-full rounded-full" style="width:{{ (val * 100)|round }}%;background:{{ color }}"></div></div>
+        </div>
+        {% endfor %}
+        {% if card.fact_agreement_rate is not none %}
+        <div>
+          <div class="flex justify-between text-xs mb-1"><span style="color:var(--text)">Fact agreement rate</span><span>{{ (card.fact_agreement_rate * 100)|round }}%</span></div>
+          <div class="h-1.5 rounded-full overflow-hidden" style="background:var(--border)"><div class="h-full rounded-full" style="width:{{ (card.fact_agreement_rate * 100)|round }}%;background:var(--consensus)"></div></div>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+    <section class="rounded-lg border p-5" style="border-color:var(--border);background:var(--bg-elevated)">
+      <h2 class="text-sm font-bold mb-3" style="color:var(--text)">Stories covered</h2>
+      <ul class="divide-y" style="border-color:var(--border)">
+        {% for s in card.covered_stories %}
+        <li><a href="/story/{{ s.slug }}" class="block py-2.5 text-sm hover:underline" style="color:var(--accent)">{{ s.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+  <aside>
+    <section class="rounded-lg border p-5" style="border-color:var(--border);background:var(--bg-elevated)">
+      <h3 class="text-sm font-bold mb-3" style="color:var(--text)">Frequently uses</h3>
+      <ul class="space-y-2">
+        {% for p in card.top_phrases %}
+        <li class="flex justify-between text-sm rounded px-3 py-2" style="background:color-mix(in srgb, var(--border) 40%, transparent)">
+          <span style="color:var(--text)">&ldquo;{{ p.phrase }}&rdquo;</span>
+          <span style="color:var(--text-secondary)">{{ p.count }}×</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </aside>
+</div>
+{% endblock %}

@@ -1,0 +1,89 @@
+{
+  "slug": "israel-iran-strike-2026",
+  "title": "Israel-Iran Strike Exchange",
+  "topic_query": "Israel Iran strike",
+  "summary": "Cross-border strikes between Israel and Iran triggered competing claims over the targets hit and the number of casualties, with outlets diverging sharply on scale and framing.",
+  "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&q=60",
+  "articles": [
+    {
+      "outlet": "Reuters",
+      "url": "https://www.reuters.com/world/israel-iran-strike",
+      "headline": "Israel strikes military sites in Iran, officials say 14 killed",
+      "description": "Israel launched a missile strike on military facilities in Iran. Officials said the strike was a response to earlier attacks. They reported 14 people killed and 18 missiles fired.",
+      "published_at": "2026-06-08T05:30:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Associated Press",
+      "url": "https://apnews.com/israel-iran",
+      "headline": "Missile strike hits Iranian military facilities, casualties reported",
+      "description": "A missile strike targeted military facilities in Iran early Monday. Authorities said the strike was a retaliation for cross-border attacks. Casualty figures were reported but remained disputed.",
+      "published_at": "2026-06-08T06:10:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "BBC",
+      "url": "https://www.bbc.com/news/israel-iran",
+      "headline": "Israel attack on Iran kills 16, Tehran vows response",
+      "description": "An Israeli attack struck military sites in Iran. Tehran vowed it would respond to the strike. Local authorities reported 16 people killed and 24 missiles fired.",
+      "published_at": "2026-06-08T07:00:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "CNN",
+      "url": "https://www.cnn.com/israel-iran",
+      "headline": "Israel strikes Iran military targets amid escalation fears",
+      "description": "Israel struck military targets in Iran on Monday. Officials said the operation was a response to earlier strikes. Analysts warned of a wider regional escalation.",
+      "published_at": "2026-06-08T08:20:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "The Times of Israel",
+      "url": "https://www.timesofisrael.com/strike",
+      "headline": "IDF operation hits Iranian military facilities in retaliation",
+      "description": "The military said its operation struck Iranian military facilities. It described the strike as a retaliation and an act of self-defense. Officials said only military sites were targeted.",
+      "published_at": "2026-06-08T06:45:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Al Jazeera",
+      "url": "https://www.aljazeera.com/strike",
+      "headline": "Massacre in Iran: dozens killed as Israeli missiles hit",
+      "description": "Israeli missiles struck Iran in what local media called a massacre. Iran condemned the attack on its territory. Reports said up to 61 people were killed including civilians.",
+      "published_at": "2026-06-08T09:05:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Press TV",
+      "url": "https://www.presstv.ir/strike",
+      "headline": "Brutal Israeli massacre kills 61, wounds hundreds",
+      "description": "A brutal Israeli attack hit Iran, state media said. It called the strike an unprovoked massacre of civilians. Officials there said 61 people were killed and hundreds wounded.",
+      "published_at": "2026-06-08T09:40:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "Fox News",
+      "url": "https://www.foxnews.com/strike",
+      "headline": "Israel hits Iran military sites in retaliation for attacks",
+      "description": "Israel carried out a strike on Iranian military sites. Officials said the operation was a justified retaliation for provocations. The strike targeted military facilities only.",
+      "published_at": "2026-06-08T10:15:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "The Guardian",
+      "url": "https://www.theguardian.com/strike",
+      "headline": "Israeli strike on Iran raises fears of regional war",
+      "description": "An Israeli strike on military facilities in Iran raised fears of a regional war. Tehran threatened to respond to the attack. Casualty figures remained disputed across sources.",
+      "published_at": "2026-06-09T07:30:00Z",
+      "image_url": null
+    },
+    {
+      "outlet": "The Jerusalem Post",
+      "url": "https://www.jpost.com/strike",
+      "headline": "Defensive operation targets Iranian military infrastructure",
+      "description": "A defensive operation struck Iranian military facilities. Officials said the strike was a measured retaliation. They reported that military sites were the only targets.",
+      "published_at": "2026-06-09T08:10:00Z",
+      "image_url": null
+    }
+  ]
+}

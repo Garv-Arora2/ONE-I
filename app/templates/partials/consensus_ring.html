@@ -1,0 +1,12 @@
+{# Signature circular consensus meter — expects: score (0-100), size optional: sm|lg #}
+{% set pct = score|default(0) %}
+<div class="consensus-ring {% if size %}consensus-ring-{{ size }}{% endif %} relative" style="--pct: {{ pct }}">
+  <svg viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="track" cx="50" cy="50" r="45" fill="none" stroke-width="10"/>
+    <circle class="fill" cx="50" cy="50" r="45" fill="none" stroke-width="10" stroke-linecap="round"/>
+  </svg>
+  <div class="absolute inset-0 flex flex-col items-center justify-center">
+    <span class="text-3xl font-bold count-up leading-none" style="color:var(--consensus)">{{ pct }}</span>
+    <span class="text-[11px] font-semibold uppercase tracking-wider" style="color:var(--text-secondary)">%</span>
+  </div>
+</div>

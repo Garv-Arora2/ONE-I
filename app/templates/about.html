@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-2xl mx-auto">
+  <h1 class="text-3xl font-bold tracking-tight mb-2" style="color:var(--text)">How ONE I works</h1>
+  <p class="mb-10" style="color:var(--text-secondary)">{{ tagline }}. Coverage confidence — never a truth score.</p>
+
+  <div class="space-y-4">
+    <div class="rounded-lg border p-5" style="border-color:var(--border);background:var(--bg-elevated)">
+      <h2 class="font-semibold mb-1" style="color:var(--text)">Consensus</h2>
+      <p class="text-sm" style="color:var(--text-secondary)">TF-IDF clustering finds what the majority of independent outlets agree happened. Each claim lists supporting sources.</p>
+    </div>
+    <div class="rounded-lg border p-5" style="border-color:var(--border);background:var(--bg-elevated)">
+      <h2 class="font-semibold mb-1" style="color:var(--text)">Disputes</h2>
+      <p class="text-sm" style="color:var(--text-secondary)">Numeric extraction flags conflicting figures. Narrative split shows how framing diverges across camps.</p>
+    </div>
+    <div class="rounded-lg border p-5" style="border-color:var(--border);background:var(--bg-elevated)">
+      <h2 class="font-semibold mb-1" style="color:var(--text)">Source explorer</h2>
+      <p class="text-sm" style="color:var(--text-secondary)">Per-outlet scores for crux alignment, timeliness, and coverage depth on each story.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

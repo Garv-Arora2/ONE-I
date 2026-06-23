@@ -1,0 +1,30 @@
+{# Full article table for source explorer #}
+<section class="mb-12">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-4" style="color:var(--text-secondary)">Source explorer</h2>
+  <div class="rounded-lg border overflow-x-auto" style="border-color:var(--border);background:var(--bg-elevated)">
+    <table class="source-table w-full text-sm text-left">
+      <thead>
+        <tr class="border-b text-xs uppercase tracking-wider" style="border-color:var(--border);color:var(--text-secondary)">
+          <th class="px-4 py-3 font-semibold">Outlet</th>
+          <th class="px-4 py-3 font-semibold">Lean</th>
+          <th class="px-4 py-3 font-semibold">Headline</th>
+          <th class="px-4 py-3 font-semibold hidden sm:table-cell">Published</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for a in articles %}
+        <tr>
+          <td class="px-4 py-3 font-semibold">
+            <a href="/outlet/{{ a.outlet }}" class="hover:underline" style="color:var(--accent)">{{ a.outlet }}</a>
+          </td>
+          <td class="px-4 py-3 capitalize text-xs" style="color:var(--text-secondary)">{{ a.lean|replace('-', ' ') }}</td>
+          <td class="px-4 py-3 max-w-md">
+            <a href="{{ a.url }}" target="_blank" rel="noopener" class="hover:underline" style="color:var(--text)">{{ a.headline }}</a>
+          </td>
+          <td class="px-4 py-3 hidden sm:table-cell tabular-nums text-xs" style="color:var(--text-secondary)">{{ a.published_at|fmt_date }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>

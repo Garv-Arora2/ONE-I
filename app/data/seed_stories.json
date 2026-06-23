@@ -1,0 +1,370 @@
+{
+  "_note": "Bundled offline demo dataset. Restore via scripts/restore_bundled_seed.py",
+  "stories": [
+    {
+      "slug": "israel-iran-strike-2026",
+      "title": "Israel-Iran Strike Exchange",
+      "topic_query": "Israel Iran strike",
+      "summary": "Cross-border strikes between Israel and Iran triggered competing claims over the targets hit and the number of casualties, with outlets diverging sharply on scale and framing.",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&q=60",
+      "articles": [
+        {
+          "outlet": "Reuters",
+          "url": "https://www.reuters.com/world/israel-iran-strike",
+          "headline": "Israel strikes military sites in Iran, officials say 14 killed",
+          "description": "Israel launched a missile strike on military facilities in Iran. Officials said the strike was a response to earlier attacks. They reported 14 people killed and 18 missiles fired.",
+          "published_at": "2026-06-08T05:30:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Associated Press",
+          "url": "https://apnews.com/israel-iran",
+          "headline": "Missile strike hits Iranian military facilities, casualties reported",
+          "description": "A missile strike targeted military facilities in Iran early Monday. Authorities said the strike was a retaliation for cross-border attacks. Casualty figures were reported but remained disputed.",
+          "published_at": "2026-06-08T06:10:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "BBC",
+          "url": "https://www.bbc.com/news/israel-iran",
+          "headline": "Israel attack on Iran kills 16, Tehran vows response",
+          "description": "An Israeli attack struck military sites in Iran. Tehran vowed it would respond to the strike. Local authorities reported 16 people killed and 24 missiles fired.",
+          "published_at": "2026-06-08T07:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "CNN",
+          "url": "https://www.cnn.com/israel-iran",
+          "headline": "Israel strikes Iran military targets amid escalation fears",
+          "description": "Israel struck military targets in Iran on Monday. Officials said the operation was a response to earlier strikes. Analysts warned of a wider regional escalation.",
+          "published_at": "2026-06-08T08:20:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The Times of Israel",
+          "url": "https://www.timesofisrael.com/strike",
+          "headline": "IDF operation hits Iranian military facilities in retaliation",
+          "description": "The military said its operation struck Iranian military facilities. It described the strike as a retaliation and an act of self-defense. Officials said only military sites were targeted.",
+          "published_at": "2026-06-08T06:45:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/strike",
+          "headline": "Massacre in Iran: dozens killed as Israeli missiles hit",
+          "description": "Israeli missiles struck Iran in what local media called a massacre. Iran condemned the attack on its territory. Reports said up to 61 people were killed including civilians.",
+          "published_at": "2026-06-08T09:05:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Press TV",
+          "url": "https://www.presstv.ir/strike",
+          "headline": "Brutal Israeli massacre kills 61, wounds hundreds",
+          "description": "A brutal Israeli attack hit Iran, state media said. It called the strike an unprovoked massacre of civilians. Officials there said 61 people were killed and hundreds wounded.",
+          "published_at": "2026-06-08T09:40:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Fox News",
+          "url": "https://www.foxnews.com/strike",
+          "headline": "Israel hits Iran military sites in retaliation for attacks",
+          "description": "Israel carried out a strike on Iranian military sites. Officials said the operation was a justified retaliation for provocations. The strike targeted military facilities only.",
+          "published_at": "2026-06-08T10:15:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The Guardian",
+          "url": "https://www.theguardian.com/strike",
+          "headline": "Israeli strike on Iran raises fears of regional war",
+          "description": "An Israeli strike on military facilities in Iran raised fears of a regional war. Tehran threatened to respond to the attack. Casualty figures remained disputed across sources.",
+          "published_at": "2026-06-09T07:30:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The Jerusalem Post",
+          "url": "https://www.jpost.com/strike",
+          "headline": "Defensive operation targets Iranian military infrastructure",
+          "description": "A defensive operation struck Iranian military facilities. Officials said the strike was a measured retaliation. They reported that military sites were the only targets.",
+          "published_at": "2026-06-09T08:10:00Z",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "slug": "us-election-poll-shift-2026",
+      "title": "US Midterm Poll Shift",
+      "topic_query": "US midterm election polls 2026",
+      "summary": "New national surveys ahead of the 2026 midterms showed a tightening race, but outlets disagreed on the margin\u2014some reporting a three-point gap and others a six-point lead\u2014while framing ranged from a landmark surge for Democrats to warnings that Republicans were slammed by economic anxiety.",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&q=60",
+      "articles": [
+        {
+          "outlet": "Reuters",
+          "url": "https://www.reuters.com/world/us/us-midterm-polls-2026",
+          "headline": "US midterm polls show tight race, generic ballot within margin of error",
+          "description": "A pair of national surveys released Thursday put Democrats ahead on the generic congressional ballot by three points, within the polls' stated margins of error. Analysts said the results suggest a competitive November rather than a decisive wave in either direction. Both parties were spending heavily in suburban districts that could decide control of the House.",
+          "published_at": "2026-06-12T14:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Associated Press",
+          "url": "https://apnews.com/article/us-midterm-polls-2026",
+          "headline": "AP-NORC poll finds narrow edge for Democrats in midterm preferences",
+          "description": "The latest AP-NORC Center poll found Democrats leading Republicans by three percentage points among registered voters asked which party they prefer in Congress. The lead was unchanged from a survey three weeks earlier. Pollsters cautioned that turnout models and district boundaries could produce a different outcome on Election Day.",
+          "published_at": "2026-06-12T15:20:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Fox News",
+          "url": "https://www.foxnews.com/politics/midterm-poll-republicans-2026",
+          "headline": "Internal GOP data shows party closing gap as voters slam Biden-era policies",
+          "description": "Republican strategists pointed to internal polling that they said showed the party gaining ground in battleground districts after months of trailing. Campaign officials argued voters had slammed the administration over inflation and border policy. They said their models still showed a path to holding the House if turnout among conservative voters matched 2022 levels.",
+          "published_at": "2026-06-12T16:05:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "CNN",
+          "url": "https://www.cnn.com/2026/06/12/politics/midterm-poll-democrats-surge",
+          "headline": "Democrats see surge in midterm polling after string of legislative wins",
+          "description": "A CNN poll conducted by SSRS found Democrats leading the generic ballot by six points among likely voters, up from a tie in April. Party officials credited a surge in enthusiasm among women and younger voters following recent congressional action on healthcare costs. Republicans dismissed the survey as an outlier compared with other public polls showing a tighter race.",
+          "published_at": "2026-06-12T17:30:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The New York Times",
+          "url": "https://www.nytimes.com/2026/06/12/us/politics/midterm-polls.html",
+          "headline": "Times/Siena poll gives Democrats six-point lead in race for Congress",
+          "description": "The New York Times and Siena College poll showed Democrats ahead by six points among likely voters nationwide. The survey found independent voters breaking toward Democrats on economic stewardship and abortion policy. Republican leaders said the poll overstated Democratic turnout and understated concern about crime in swing suburbs.",
+          "published_at": "2026-06-12T18:10:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Politico",
+          "url": "https://www.politico.com/news/2026/06/12/midterm-poll-shift-analysis",
+          "headline": "Poll shift scrambles midterm map as both parties claim momentum",
+          "description": "Competing surveys this week reported margins ranging from a dead heat to a six-point Democratic advantage, leaving strategists unsure how to allocate late spending. Democratic operatives highlighted a landmark improvement among college-educated voters in the Sun Belt. Republican consultants said their own tracking showed a three-point race once likely-voter screens were applied consistently.",
+          "published_at": "2026-06-12T19:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The Hill",
+          "url": "https://thehill.com/homenews/campaign/2026-midterm-polls/",
+          "headline": "Midterm polls diverge on margin as control of Congress remains in play",
+          "description": "Public polls released over 48 hours showed Democrats leading by anywhere from three to six points on the generic ballot. The Hill's aggregation of recent surveys put the average lead at roughly four points, still within historical error bands for this stage of the cycle. Leaders in both parties planned additional ad buys in Pennsylvania, Arizona, and Wisconsin.",
+          "published_at": "2026-06-12T20:15:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "NBC News",
+          "url": "https://www.nbcnews.com/politics/2026-election/midterm-poll-nbc-news",
+          "headline": "NBC News poll: Democrats hold slim three-point edge in midterm matchup",
+          "description": "An NBC News poll found Democrats leading Republicans by three points among registered voters on which party should control Congress. The result was little changed from the network's survey in May. Analysts on Meet the Press noted that a three-point national margin could still yield a Republican House majority depending on how votes are distributed across districts.",
+          "published_at": "2026-06-12T21:40:00Z",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "slug": "fed-holds-rates-2026",
+      "title": "Fed Holds Rates at 5.25%",
+      "topic_query": "Federal Reserve interest rate decision June 2026",
+      "summary": "The Federal Reserve kept its benchmark interest rate unchanged at 5.25% at its June meeting, citing progress on inflation and a steady labor market. Coverage across financial and general outlets largely agreed on the decision, the stated rationale, and expectations for a possible cut later in the year.",
+      "image_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=60",
+      "articles": [
+        {
+          "outlet": "Reuters",
+          "url": "https://www.reuters.com/markets/us/fed-holds-rates-june-2026",
+          "headline": "Fed holds rates at 5.25%, signals patience on cuts",
+          "description": "The Federal Reserve left its target interest rate unchanged at 5.25% on Wednesday, as widely expected by markets. Chair Jerome Powell said policymakers needed more confidence that inflation was moving sustainably toward 2% before reducing borrowing costs. The dot plot showed most officials projecting one quarter-point cut before year-end.",
+          "published_at": "2026-06-18T18:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-18/fed-holds-525",
+          "headline": "Fed Keeps Rates at 5.25% as Inflation Cools Gradually",
+          "description": "The Federal Open Market Committee voted unanimously to maintain the federal funds rate at 5.25%, the level set in prior meetings. Bloomberg Economics noted that core PCE inflation had eased to 2.6% over the past year. Treasury yields fell slightly after the statement reiterated that the committee does not expect to cut until it sees further progress.",
+          "published_at": "2026-06-18T18:05:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The Wall Street Journal",
+          "url": "https://www.wsj.com/economy/central-banking/fed-holds-rates-june-2026",
+          "headline": "Federal Reserve Holds Key Rate at 5.25%, Waits for Clearer Inflation Signal",
+          "description": "The Fed kept its benchmark rate at 5.25% for a fourth consecutive meeting, matching forecasts from economists surveyed by the Journal. Officials said the labor market remained solid, with unemployment holding near 4.1%. Powell told reporters the committee was in no rush to adjust policy while price pressures continued to moderate.",
+          "published_at": "2026-06-18T18:15:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Financial Times",
+          "url": "https://www.ft.com/content/fed-holds-rates-525-june-2026",
+          "headline": "US Fed leaves rates unchanged at 5.25% in widely anticipated move",
+          "description": "The Federal Reserve maintained its policy rate at 5.25%, a decision markets had priced in with near certainty. The FT reported that officials acknowledged improved inflation data but wanted additional months of evidence before easing. European and Asian equities rose modestly after the statement avoided hawkish surprises.",
+          "published_at": "2026-06-18T18:20:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Associated Press",
+          "url": "https://apnews.com/article/federal-reserve-rate-decision-june-2026",
+          "headline": "Fed keeps interest rates at 5.25%, citing need for more inflation progress",
+          "description": "The Federal Reserve held its key interest rate steady at 5.25%, extending a pause that began earlier this year. In a statement, the central bank said recent data showed inflation easing but still running above its 2% target. AP noted that mortgage rates and auto loan costs are likely to remain elevated in the near term.",
+          "published_at": "2026-06-18T18:30:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "BBC",
+          "url": "https://www.bbc.com/news/business-fed-rates-june-2026",
+          "headline": "US Federal Reserve holds rates at 5.25% as inflation slows",
+          "description": "The US central bank left interest rates unchanged at 5.25%, in line with economist expectations. The BBC reported that policymakers cited a cooling jobs market alongside gradually falling price growth. Global investors watched for hints on timing of the Fed's first rate cut since the tightening cycle began.",
+          "published_at": "2026-06-18T18:45:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "CNBC",
+          "url": "https://www.cnbc.com/2026/06/18/fed-decision-june-2026.html",
+          "headline": "Fed holds rates steady at 5.25%, markets bet on September cut",
+          "description": "The Federal Reserve kept its overnight rate at 5.25% at the conclusion of its two-day meeting. CNBC's Fed survey showed 78% of respondents expect a cut at the September meeting if inflation data hold. Major stock indexes closed higher, with the S&P 500 gaining 0.6% after Powell's press conference.",
+          "published_at": "2026-06-18T19:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Fox News",
+          "url": "https://www.foxnews.com/politics/fed-holds-rates-525-june-2026",
+          "headline": "Federal Reserve keeps rates at 5.25%, Powell cites lingering inflation concerns",
+          "description": "The Fed voted to leave its benchmark rate at 5.25%, continuing a pause that has kept borrowing costs high for households and businesses. Fox Business reported that Powell emphasized the central bank's independence amid political pressure from both parties. Republicans and Democrats alike noted the decision would keep mortgage rates elevated through the summer.",
+          "published_at": "2026-06-18T19:20:00Z",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "slug": "eu-ai-act-enforcement-2026",
+      "title": "EU AI Act Enforcement Begins",
+      "topic_query": "EU AI Act enforcement 2026",
+      "summary": "The European Union began enforcing core provisions of its AI Act, with regulators and industry bracing for compliance deadlines on high-risk systems. Coverage split between outlets hailing landmark protection for citizens and those warning of a burdensome crackdown that could stifle innovation.",
+      "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=60",
+      "articles": [
+        {
+          "outlet": "Reuters",
+          "url": "https://www.reuters.com/technology/eu-ai-act-enforcement-2026",
+          "headline": "EU starts enforcing AI Act as companies face new compliance deadlines",
+          "description": "European regulators began applying the first binding rules under the AI Act on Monday, focusing on banned practices and transparency requirements for general-purpose models. Companies were given staggered deadlines through 2027 depending on risk classification. Brussels said enforcement would be phased to allow smaller firms time to adapt.",
+          "published_at": "2026-06-02T08:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "BBC",
+          "url": "https://www.bbc.com/news/technology-eu-ai-act-enforcement",
+          "headline": "Landmark EU AI rules take effect, promising stronger protection for citizens",
+          "description": "The BBC reported that the EU's AI Act entered its enforcement phase, described by officials as landmark protection for fundamental rights. The rules prohibit social scoring and certain biometric surveillance in public spaces. Consumer groups welcomed the move while tech firms said they were working to meet documentation and audit requirements.",
+          "published_at": "2026-06-02T09:15:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The Guardian",
+          "url": "https://www.theguardian.com/technology/2026/jun/02/eu-ai-act-enforcement",
+          "headline": "EU AI Act enforcement begins in 'landmark moment' for digital rights",
+          "description": "The Guardian framed the start of enforcement as a landmark moment for holding technology companies accountable. Advocates said the law offers the strongest safeguards yet against discriminatory algorithms in hiring and lending. Critics within industry argued that overlapping national rules could create confusion during the transition period.",
+          "published_at": "2026-06-02T10:30:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Politico EU",
+          "url": "https://www.politico.eu/article/eu-ai-act-enforcement-brussels-compliance",
+          "headline": "Brussels turns AI Act from paper to practice as watchdogs gain new powers",
+          "description": "Politico EU reported that national regulators and the new AI Office gained authority to request documentation and impose fines for non-compliance. Officials in Paris and Berlin said they were hiring additional inspectors to handle expected caseloads. The Commission insisted the framework balances innovation with the bloc's values-based approach to technology.",
+          "published_at": "2026-06-02T11:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Financial Times",
+          "url": "https://www.ft.com/content/eu-ai-act-enforcement-burden-2026",
+          "headline": "Businesses warn of compliance burden as EU AI Act enforcement starts",
+          "description": "The Financial Times highlighted concerns from startups and multinationals about the cost of meeting new audit and transparency obligations. Several executives said the rules amount to a regulatory crackdown that could push AI development outside Europe. Brussels responded that phased deadlines and sandboxes were designed to reduce the burden on smaller companies.",
+          "published_at": "2026-06-02T12:20:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Axios",
+          "url": "https://www.axios.com/2026/06/02/eu-ai-act-enforcement-tech-industry",
+          "headline": "EU AI Act goes live: what enforcement means for US tech giants",
+          "description": "Axios explained that enforcement now covers banned AI uses and initial obligations for providers of general-purpose models operating in the EU market. US companies with European customers must appoint EU representatives and maintain technical documentation. Analysts said the practical impact will unfold over months as the first compliance reviews begin.",
+          "published_at": "2026-06-02T13:45:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The Verge",
+          "url": "https://www.theverge.com/2026/6/2/eu-ai-act-enforcement-crackdown",
+          "headline": "The EU's AI crackdown is here, and Silicon Valley isn't ready",
+          "description": "The Verge argued that enforcement marks the beginning of a crackdown on opaque AI systems that have operated with minimal oversight. The piece cited open-source developers who fear documentation rules could stifle community projects. Supporters countered that landmark protection for users outweighs short-term disruption for the industry.",
+          "published_at": "2026-06-02T15:10:00Z",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "slug": "cop-climate-summit-2026",
+      "title": "COP Climate Summit Deal",
+      "topic_query": "COP climate summit agreement 2026",
+      "summary": "Negotiators at the latest UN climate summit reached a deal on fossil fuel transition financing and updated emissions targets, but outlets divided sharply on whether the agreement represented a genuine breakthrough or fell short of what science demands.",
+      "image_url": "https://images.unsplash.com/photo-1569163139394-de4798aa62b0?w=1200&q=60",
+      "articles": [
+        {
+          "outlet": "Reuters",
+          "url": "https://www.reuters.com/business/environment/cop-climate-summit-deal-2026",
+          "headline": "COP summit clinches deal on transition fund, splits on ambition",
+          "description": "Delegates agreed to establish a $100 billion transition fund to help developing nations shift from coal and oil. Reuters noted that the final text omitted explicit language on phasing out fossil fuels that some nations had pushed for. UN officials called the outcome a step forward while acknowledging sharp divisions among participants.",
+          "published_at": "2026-06-15T22:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "BBC",
+          "url": "https://www.bbc.com/news/science-environment-cop-deal-2026",
+          "headline": "COP deal hailed as breakthrough on climate finance",
+          "description": "The BBC reported that negotiators hailed the agreement as a breakthrough after all-night talks in Geneva. The deal commits wealthy nations to increased funding for adaptation and loss-and-damage programs. Climate scientists said the emissions pledges attached to the fund still leave the world off track for 1.5\u00b0C warming.",
+          "published_at": "2026-06-15T22:30:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/climate/cop-summit-deal-2026",
+          "headline": "Climate summit deal falls short for nations on front line of crisis",
+          "description": "Al Jazeera spoke with delegates from Pacific island states who said the agreement falls short of addressing the scale of damage they already face. The outlet reported that financing commitments remain voluntary and lack enforcement mechanisms. Activists outside the venue called the deal inadequate compared with the urgency described by the IPCC.",
+          "published_at": "2026-06-15T23:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "The Guardian",
+          "url": "https://www.theguardian.com/environment/2026/jun/15/cop-climate-deal-inadequate",
+          "headline": "Cop deal branded inadequate as activists slam weak fossil fuel language",
+          "description": "The Guardian emphasized criticism from environmental groups who said the summit produced an inadequate response to the climate emergency. The final communique references a transition away from fossil fuels but sets no binding timeline. Several European ministers defended the package as the best achievable compromise given opposition from major oil producers.",
+          "published_at": "2026-06-15T23:45:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Associated Press",
+          "url": "https://apnews.com/article/cop-climate-summit-agreement-2026",
+          "headline": "Nations reach climate deal with new fund, but gaps remain on emissions cuts",
+          "description": "The Associated Press reported that nearly 190 countries approved a deal creating a transition fund and encouraging updated national climate plans by 2027. AP noted that the agreement was described as a breakthrough by the summit president and as insufficient by island nation representatives. Analysts said implementation will determine whether the pact meaningfully reduces global emissions.",
+          "published_at": "2026-06-16T00:15:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "France 24",
+          "url": "https://www.france24.com/en/environment-cop-summit-breakthrough-2026",
+          "headline": "EU leaders welcome COP breakthrough on climate finance package",
+          "description": "France 24 reported that European Union leaders welcomed what they called a breakthrough agreement on multilateral climate financing. French officials highlighted provisions for methane reduction and renewable energy targets in the final text. The broadcast noted that critics argue the deal's voluntary elements make it vulnerable to shifting political winds in donor countries.",
+          "published_at": "2026-06-16T01:00:00Z",
+          "image_url": null
+        },
+        {
+          "outlet": "Deutsche Welle",
+          "url": "https://www.dw.com/en/cop-climate-deal-falls-short/a-2026",
+          "headline": "COP agreement falls short of scientists' warnings, DW analysis finds",
+          "description": "Deutsche Welle's analysis concluded that the summit deal falls short of the emissions trajectory scientists say is needed to limit catastrophic warming. German NGOs said the financing pledge, while larger than prior commitments, remains insufficient for the Global South. DW also noted that some delegates privately described the outcome as a pragmatic breakthrough given geopolitical constraints.",
+          "published_at": "2026-06-16T02:30:00Z",
+          "image_url": null
+        }
+      ]
+    }
+  ]
+}

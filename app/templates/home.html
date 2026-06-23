@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="mb-10 pb-8 border-b" style="border-color:var(--border)">
+  <p class="text-xs font-semibold uppercase tracking-[0.2em] mb-2" style="color:var(--text-secondary)">{{ tagline }}</p>
+  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+    <div>
+      <h1 class="text-3xl font-bold tracking-tight" style="color:var(--text)">News intelligence</h1>
+      <p class="mt-1 text-sm" style="color:var(--text-secondary)">What happened · what is disputed · who is framing it · how trustworthy the coverage is</p>
+    </div>
+    <div class="text-right">
+      <div class="text-2xl font-bold tabular-nums" style="color:var(--text)">{{ story_count }}</div>
+      <div class="text-[11px] uppercase tracking-wider" style="color:var(--text-secondary)">Stories tracked</div>
+    </div>
+  </div>
+</section>
+
+{% if cards %}
+<section>
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-4" style="color:var(--text-secondary)">Today&rsquo;s coverage · ranked by confidence</h2>
+  <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    {% for card in cards %}
+    {% include "partials/story_card.html" %}
+    {% endfor %}
+  </div>
+</section>
+{% else %}
+<p class="text-sm py-12 text-center" style="color:var(--text-secondary)">No stories loaded.</p>
+{% endif %}
+
+{% endblock %}

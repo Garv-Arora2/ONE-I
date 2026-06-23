@@ -1,0 +1,21 @@
+{# expects: timeline (list) #}
+<section class="mb-16" x-data x-init="
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  $el.querySelectorAll('.timeline-item').forEach(el => obs.observe(el));
+">
+  <h2 class="text-xs font-bold uppercase tracking-widest mb-8" style="color:var(--text-secondary)">Timeline</h2>
+  <div class="relative pl-8 border-l ml-2" style="border-color:var(--border)">
+    {% for day in timeline %}
+    {% for entry in day.entries %}
+    <div class="timeline-item relative pb-8 last:pb-0">
+      <span class="absolute -left-[calc(2rem+5px)] top-1.5 w-2.5 h-2.5 rounded-full border-2" style="background:var(--bg-elevated);border-color:var(--consensus)"></span>
+      <time class="text-xs font-medium tabular-nums" style="color:var(--text-secondary)">{{ day.day }}</time>
+      <p class="text-sm font-semibold mt-1" style="color:var(--text)">{{ entry.outlet }}</p>
+      <p class="text-sm mt-0.5" style="color:var(--text-secondary)">{{ entry.headline }}</p>
+    </div>
+    {% endfor %}
+    {% endfor %}
+  </div>
+</section>
