@@ -2,6 +2,12 @@
 
 **Narrative Accountability Engine**
 
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+**Author:** [Garv Arora](https://github.com/Garv-Arora2) · 2026
+
 ONE-I is a backend-focused news analysis system that consolidates multi-source reporting for a story and exposes structured evidence of agreement, disagreement, and framing differences through a FastAPI application.
 
 ## Overview
