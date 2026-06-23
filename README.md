@@ -183,6 +183,4 @@ Detailed flow is documented in `docs/data-pipeline.md`.
 - Add stronger deduplication and clustering across near-duplicate headlines
 - Add integration tests for refresh scripts and route-level contract tests
 
-## License
 
-Add a license file before publishing publicly. If undecided, MIT is a common default for portfolio repositories.
